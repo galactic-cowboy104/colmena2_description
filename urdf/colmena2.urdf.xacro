@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<robot name="colmena2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find colmena2_description)/urdf/colmena2_core.xacro" />
+    <xacro:include filename="$(find colmena2_description)/urdf/colmena2.gazebo.xacro" />
+
+</robot>
