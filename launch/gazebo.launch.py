@@ -8,32 +8,26 @@ import xacro
 
 def generate_launch_description():
 
-    # Specify the name of the package and path to xacro file within the package
     pkg_name = 'colmena2_description'
     file_subpath = 'urdf/colmena2.urdf.xacro'
 
 
-    # Use xacro to process the file
     xacro_file = os.path.join(get_package_share_directory(pkg_name),file_subpath)
     robot_description_raw = xacro.process_file(xacro_file).toxml()
 
 
-    # Configure the node
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
         parameters=[{'robot_description': robot_description_raw,
-        'use_sim_time': True}] # add other parameters here if required
+        'use_sim_time': True}]
     )
-
-
 
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
         )
-
 
     spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                     arguments=['-topic', 'robot_description',
@@ -43,7 +37,6 @@ def generate_launch_description():
                                 '-z', '0.0'],
                     output='screen')
 
-    # Run the node
     return LaunchDescription([
         gazebo,
         node_robot_state_publisher,
