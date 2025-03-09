@@ -7,15 +7,15 @@
 
   <link name="chassis">
     <inertial>
-      <mass value="2.131"/>
+      <mass value="0.298408"/>
       <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
       <inertia 
-        ixx="0.004055" 
-        ixy="0.0" 
-        ixz="0.0001573" 
-        iyy="0.01032" 
-        iyz="0.0" 
-        izz="0.01298"
+        ixx="0.0003667" 
+        ixy="-0.0000122" 
+        ixz="0.0000112" 
+        iyy="0.0005734" 
+        iyz="-0.0000046" 
+        izz="0.00006682"
       />
     </inertial>
     <visual>
@@ -35,15 +35,15 @@
 
   <link name="left_sprocket">
     <inertial>
-      <mass value="0.239463"/>
+      <mass value="0.051528"/>
       <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
       <inertia 
-        ixx="0.0000608" 
+        ixx="0.0000098" 
         ixy="0.0" 
         ixz="0.0" 
-        iyy="0.0001084" 
+        iyy="0.0000142" 
         iyz="0.0" 
-        izz="0.0000608"
+        izz="0.0000098"
       />
     </inertial>
     <visual>
@@ -51,7 +51,7 @@
       <geometry>
         <mesh filename="file://$(find colmena2_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="silver"/>
+      <material name="black"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -63,15 +63,15 @@
 
   <link name="right_sprocket">
     <inertial>
-      <mass value="0.239463"/>
+      <mass value="0.051528"/>
       <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
       <inertia 
-        ixx="0.0000608" 
+        ixx="0.0000098" 
         ixy="0.0" 
         ixz="0.0" 
-        iyy="0.0001084" 
+        iyy="0.0000142" 
         iyz="0.0" 
-        izz="0.0000608"
+        izz="0.0000098"
       />
     </inertial>
     <visual>
@@ -79,7 +79,7 @@
       <geometry>
         <mesh filename="file://$(find colmena2_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="silver"/>
+      <material name="black"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -91,15 +91,15 @@
 
   <link name="left_wheel">
     <inertial>
-      <mass value="0.239463"/>
+      <mass value="0.051528"/>
       <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
       <inertia 
-        ixx="0.0000608" 
+        ixx="0.0000098" 
         ixy="0.0" 
         ixz="0.0" 
-        iyy="0.0001084" 
+        iyy="0.0000142" 
         iyz="0.0" 
-        izz="0.0000608"
+        izz="0.0000098"
       />
     </inertial>
     <visual>
@@ -107,7 +107,7 @@
       <geometry>
         <mesh filename="file://$(find colmena2_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="silver"/>
+      <material name="black"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -119,15 +119,15 @@
 
   <link name="right_wheel">
     <inertial>
-      <mass value="0.239463"/>
+      <mass value="0.051528"/>
       <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
       <inertia 
-        ixx="0.0000608" 
+        ixx="0.0000098" 
         ixy="0.0" 
         ixz="0.0" 
-        iyy="0.0001084" 
+        iyy="0.0000142" 
         iyz="0.0" 
-        izz="0.0000608"
+        izz="0.0000098"
       />
     </inertial>
     <visual>
@@ -135,7 +135,7 @@
       <geometry>
         <mesh filename="file://$(find colmena2_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="silver"/>
+      <material name="black"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -147,15 +147,15 @@
 
   <link name="left_track">
     <inertial>
-      <mass value="0.022541"/>
+      <mass value="0.049475"/>
       <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
       <inertia 
-        ixx="0.0001033" 
+        ixx="0.0000208" 
         ixy="0.0" 
         ixz="0.0" 
-        iyy="0.0009194" 
+        iyy="0.0001660" 
         iyz="0.0" 
-        izz="0.0008376"
+        izz="0.0001504"
       />
     </inertial>
     <visual>
@@ -169,15 +169,15 @@
   
   <link name="right_track">
     <inertial>
-      <mass value="0.022541"/>
+      <mass value="0.049475"/>
       <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
       <inertia 
-        ixx="0.0001033" 
+        ixx="0.0000208" 
         ixy="0.0" 
         ixz="0.0" 
-        iyy="0.0009194" 
+        iyy="0.0001660" 
         iyz="0.0" 
-        izz="0.0008376"
+        izz="0.0001504"
       />
     </inertial>
     <visual>
@@ -188,115 +188,31 @@
       <material name="black"/>
     </visual>
   </link>
-
-  <link name="arm">
-    <inertial>
-      <mass value="0.369"/>
-      <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
-      <inertia 
-        ixx="0.0001981" 
-        ixy="0.0" 
-        ixz="-0.0000834" 
-        iyy="0.002241" 
-        iyz="0.0" 
-        izz="0.002158"
-      />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="file://$(find colmena2_description)/meshes/arm.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="silver"/>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="file://$(find colmena2_description)/meshes/arm.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <link name="support">
-    <inertial>
-      <mass value="0.280"/>
-      <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
-      <inertia 
-        ixx="0.0005618" 
-        ixy="0.0" 
-        ixz="-0.0001057" 
-        iyy="0.0006207" 
-        iyz="0.0" 
-        izz="0.0000886"
-      />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="file://$(find colmena2_description)/meshes/support.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="silver"/>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="file://$(find colmena2_description)/meshes/support.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <link name="panel">
-    <inertial>
-      <mass value="0.167"/>
-      <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
-      <inertia 
-        ixx="0.0002904" 
-        ixy="0.0" 
-        ixz="0.0001546" 
-        iyy="0.0003574" 
-        iyz="0.0" 
-        izz="0.0004688"
-      />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="file://$(find colmena2_description)/meshes/panel.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="blue"/>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="file://$(find colmena2_description)/meshes/panel.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
   
   <joint name="ch_to_bl_joint" type="fixed">
     <parent link="base_link"/>
     <child link="chassis"/>
-    <origin xyz="-0.002463 -0.000004 0.010086"/>
+    <origin xyz="-0.007614 0.000962 0.01313"/>
   </joint>
 
   <joint name="ls_to_ch_joint" type="continuous">
     <parent link="chassis"/>
     <child link="left_sprocket"/>
-    <origin xyz="-0.097537 0.100004 -0.010086"/>
+    <origin xyz="-0.056886 0.048538 -0.01313"/>
     <axis xyz="0 1 0"/>
   </joint>
 
   <joint name="rs_to_ch_joint" type="continuous">
     <parent link="chassis"/>
     <child link="right_sprocket"/>
-    <origin xyz="-0.097537 -0.099996 -0.010086"/>
+    <origin xyz="-0.056886 -0.050462 -0.01313"/>
     <axis xyz="0 1 0"/>
   </joint>
 
   <joint name="lw_to_ch_joint" type="continuous">
     <parent link="chassis"/>
     <child link="left_wheel"/>
-    <origin xyz="0.102463 0.100004 -0.010086"/>
+    <origin xyz="0.072114 0.048538 -0.01313"/>
     <axis xyz="0 1 0"/>
     <mimic joint="ls_to_ch_joint" multiplier="1" offset="0"/>
   </joint>
@@ -304,7 +220,7 @@
   <joint name="rw_to_ch_joint" type="continuous">
     <parent link="chassis"/>
     <child link="right_wheel"/>
-    <origin xyz="0.102463 -0.099996 -0.010086"/>
+    <origin xyz="0.072114 -0.050462 -0.01313"/>
     <axis xyz="0 1 0"/>
     <mimic joint="rs_to_ch_joint" multiplier="1" offset="0"/>
   </joint>
@@ -312,31 +228,13 @@
   <joint name="lt_to_ch_joint" type="fixed">
     <parent link="chassis"/>
     <child link="left_track"/>
-    <origin xyz="0.002458 0.100004 -0.010086"/>
+    <origin xyz="0.007614 0.048538 -0.01313"/>
   </joint>
 
   <joint name="rt_to_ch_joint" type="fixed">
     <parent link="chassis"/>
     <child link="right_track"/>
-    <origin xyz="0.002458 -0.099996 -0.010086"/>
-  </joint>
-
-  <joint name="arm_to_ch_joint" type="fixed">
-    <parent link="chassis"/>
-    <child link="arm"/>
-    <origin xyz="0.243999 0.0 0.071118"/>
-  </joint>
-
-  <joint name="sp_to_ch_joint" type="fixed">
-    <parent link="chassis"/>
-    <child link="support"/>
-    <origin xyz="-0.070318 0.0 0.112644"/>
-  </joint>
-
-  <joint name="pn_to_ch_joint" type="fixed">
-    <parent link="chassis"/>
-    <child link="panel"/>
-    <origin xyz="-0.035091 0.000003 0.196115" rpy="0.0 ${pi/6} 0.0"/>
+    <origin xyz="0.007614 -0.050462 -0.01313"/>
   </joint>
   
 </robot>
