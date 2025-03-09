@@ -6,19 +6,19 @@
   </gazebo>
 
   <gazebo reference="right_sprocket">
-    <material>Gazebo/Gray</material>
+    <material>Gazebo/Black</material>
   </gazebo>
 
   <gazebo reference="right_wheel">
-    <material>Gazebo/Gray</material>
+    <material>Gazebo/Black</material>
   </gazebo>
 
   <gazebo reference="left_sprocket">
-    <material>Gazebo/Gray</material>
+    <material>Gazebo/Black</material>
   </gazebo>
 
   <gazebo reference="left_wheel">
-    <material>Gazebo/Gray</material>
+    <material>Gazebo/Black</material>
   </gazebo>
   
   <gazebo reference="right_track">
@@ -27,18 +27,6 @@
 
   <gazebo reference="left_track">
     <material>Gazebo/Black</material>
-  </gazebo>
-
-  <gazebo reference="arm">
-    <material>Gazebo/Gray</material>
-  </gazebo>
-
-  <gazebo reference="support">
-    <material>Gazebo/Gray</material>
-  </gazebo>
-  
-  <gazebo reference="panel">
-    <material>Gazebo/Blue</material>
   </gazebo>
 
   <gazebo>
@@ -55,11 +43,11 @@
       <left_joint>ls_to_ch_joint</left_joint>
       <right_joint>rs_to_ch_joint</right_joint>
 
-      <wheel_separation>0.22</wheel_separation>
-      <wheel_separation>0.22</wheel_separation>
+      <wheel_separation>0.099</wheel_separation>
+      <wheel_separation>0.099</wheel_separation>
 
-      <wheel_diameter>0.056</wheel_diameter>
-      <wheel_diameter>0.056</wheel_diameter>
+      <wheel_diameter>0.047</wheel_diameter>
+      <wheel_diameter>0.047</wheel_diameter>
 
       <max_wheel_torque>1000</max_wheel_torque>
       <max_wheel_acceleration>10.0</max_wheel_acceleration>
